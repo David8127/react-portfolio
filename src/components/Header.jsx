@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Header = () => {
   return (
     <>
@@ -28,9 +26,6 @@ const Header = () => {
           </div>
         </section>
       </nav>
-      <div>
-        <button className='btn btn-sm'>click</button>
-      </div>
     </>
   )
 }
