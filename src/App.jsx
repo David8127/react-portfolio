@@ -1,16 +1,15 @@
 import { useState } from 'react'
 import Header from './components/Header';
-import Nav from './components/Navbar';
+import About from './components/About';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <Nav />
-      <div className="w-screen h-screen flex items-center justify-center">
         <Header />
-        <span>Hello World</span>
+      <div className="pt-15 flex items-center justify-center">
+        <About/>
 
       </div>
 
