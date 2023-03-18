@@ -1,52 +1,72 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export const ContactForm = () => {
+const ContactForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-  
+
     const handleSubmit = (event) => {
-      event.preventDefault();
-  
-      console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-      setName('');
-      setEmail('');
-      setMessage('');
+        event.preventDefault();
+
+        console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+        setName('');
+        setEmail('');
+        setMessage('');
+
+        alert(`Submitted! Thank you, ${name}!`)
     };
-  
+
     return (
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input
-            type='text'
-            placeholder='Your name'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-  
-        <label>
-          Email:
-          <input
-            type='email'
-            placeholder='Your email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </label>
-  
-        <label>
-          Message:
-          <textarea
-            type='text'
-            placeholder='Inqueries/comments'
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </label>
-  
-        <button type='submit'>Submit</button>
-      </form>
+        <div style={{ display: 'inline-block', overflow: 'hidden' }} className="contact text-center m-4 py-2.5 rounded-lg border-2 border-dashed border-gray-600">
+            <div className="p-3">
+
+                <form onSubmit={handleSubmit}>
+                    <h1 className='text-2xl font-semibold p-2'>Contact me</h1>
+                    <div className="form-inputs ">
+                        <div className="form-item p-1">
+                            <label className='text-xl'>
+                                Name:
+                                <input
+                                    type="text"
+                                    placeholder="Your name"
+                                    className="input input-primary input-bordered input-md w-full max-w-xs mx-3"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                            </label>
+                        </div>
+                        <div className="form-item p-1">
+                            <label className='text-xl'>
+                                Email:
+                                <input
+                                    type="text"
+                                    placeholder="Email"
+                                    className="input input-primary input-bordered input-md w-full max-w-xs mx-3"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+                            </label>
+                        </div>
+                        <div className="form-item p-2">
+                            <label className='text-xl'>
+                                Message:
+                                <textarea
+                                    rows='5'
+                                    cols='45'
+                                    type='text'
+                                    placeholder='Inqueries/comments'
+                                    className="textarea textarea-primary mx-3"
+                                    value={message}
+                                    onChange={(e) => setMessage(e.target.value)}
+                                />
+                            </label>
+                        </div>
+                        <button className='btn btn-primary btn-outline' type='submit'>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     );
 }
+
+export default ContactForm;

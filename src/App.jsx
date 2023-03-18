@@ -1,19 +1,30 @@
 import { useState, React } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import About from './components/About';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-        <Header />
-      <div className="pt-15 flex items-center justify-center">
-        <About/>
-
-      </div>
-
+      
+      <BrowserRouter>
+      <Header />
+        <Routes>
+          <Route path='/' element={<About />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/contact' element={<ContactForm />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
+
   )
 }
 

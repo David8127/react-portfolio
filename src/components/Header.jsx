@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <>
@@ -13,16 +15,16 @@ const Header = () => {
           }}
         >
           <div className="px-3 py-2 font-medium hover:font-bold text-xl">
-            <a href="#">About Me</a>
+            <Link to="/">About Me</Link>
           </div>
           <div className="px-3 py-2 font-medium hover:font-bold text-xl">
-            <a href="#">Portfolio</a>
+            <Link to="portfolio">Portfolio</Link>
           </div>
           <div className="px-3 py-2 font-medium hover:font-bold text-xl">
-            <a href="#">Resume</a>
+            <Link to="resume">Resume</Link>
           </div>
           <div className="px-3 py-2 font-medium hover:font-bold text-xl">
-            <a href="#">Contact</a>
+            <Link to="contact">Contact</Link>
           </div>
         </section>
       </nav>

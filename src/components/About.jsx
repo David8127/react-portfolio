@@ -6,10 +6,10 @@ function About() {
     <div className='flex flex-col space-y-5 items-center justify-center mx-9'>
       <div className="avatar">
         <div className="w-24 rounded-3xl">
-          <img  />
+          {/* <img  /> */}
         </div>
       </div>
-      <h1 className="text-3xl">Hello Everyone!</h1>
+      <h1 className="text-3xl p-2">Hello Everyone!</h1>
       <p className="text-xl py-2 w-3/5">
         My name is <span className="font-bold">David Martin</span> and I am a full stack web developer. I am currently enrolled in the MERN stack coding bootcamp at UCI. I have an educational background
         in biochemistry, earning my degree from UCSD in 2018. After exploring web development on my own, I found myself excited and intrigued about the tech world, and
