@@ -28,3 +28,4 @@ function App() {
 }
 
 export default App
+// { activeTab === "tab1" ? "px-3 py-2 tab tab-active tab-lg tab-lifted text-xl about" : "px-3 py-2 tab tab-lg tab-lifted text-xl about" }
