@@ -1,4 +1,3 @@
-import React from 'react';
 import Password from '../assets/passwordGen2.png';
 import Schedule from '../assets/scheduleExample.png';
 import WeatherApp from '../assets/weather-app-pic.png';
@@ -6,15 +5,12 @@ import Note from '../assets/new-note.png';
 import Carry from '../assets/carryon.png';
 import Tune from '../assets/tune-in.png';
 
-
-
 const Portfolio = () => {
   return (
     <div className="flex flex-col">
-      <h1>My developer Portfolio</h1>
-      <h4>*Click the pics to get to the app</h4>
+      <h1 className='pt-3 font-bold text-xl'>My developer Portfolio</h1>
       <div className="applications grid grid-cols-2 gap-10 justify-center p-7">
-      <div className="card w-96 bg-base-100 shadow-xl justify-self-end">
+      <div className="card w-96 bg-base-100 shadow-xl  justify-self-end">
           <figure><img src={Tune} alt="Tune-in" /></figure>
           <div className="card-body">
             <h2 className="card-title">

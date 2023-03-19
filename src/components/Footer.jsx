@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="sticky bottom-0 footer footer-center py-1.5 bg-base-300 text-base-content rounded">
+        <footer className="sticky bottom-0 footer footer-center py-1.5 bg-base-300 text-base-content rounded bg-teal-700">
             <div className="grid grid-flow-col gap-5">
                 <a className="text-lg">Github</a>
                 <a className="text-lg">LinkedIn</a>
