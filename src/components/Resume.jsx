@@ -5,7 +5,7 @@ import Pdf from '../assets/Resume.pdf';
 const Resume = () => {
   return (
     <div style={{ paddingBlock: "55px" }}>
-      <h1 className="text-2xl pt-15">Download my resume below ⏬ </h1>
+      <h1 className="text-2xl pt-12">Download my resume below ⏬ </h1>
       <MovingText
         type="flipFromLeftToCenter"
         duration="1600ms"

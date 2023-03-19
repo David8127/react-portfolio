@@ -17,7 +17,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div style={{ display: 'inline-block', overflow: 'hidden', alignSelf:"center" }} className="contact text-center m-14 py-5 rounded-lg border-2 border-dashed border-emerald-600 bg-gray-300">
+        <div style={{ display: 'inline-block', overflow: 'hidden', alignSelf:"center" }} className="contact text-center m-14 py-11 rounded-lg border-2 border-solid border-emerald-600 bg-gray-300">
             <div className="p-3">
                 <form onSubmit={handleSubmit}>
                     <h1 className='text-2xl font-semibold pb-2'>Contact Me</h1>
