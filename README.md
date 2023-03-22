@@ -24,11 +24,11 @@ Follow the link to my website and easily navigate through the pages to find my p
 
 The following animation shows the web application's appearance and functionality:
 
-![User opens link and is presented with about me section first, with navigation to other tabs.](./assets/PortfolioMain.JPG)
+![User opens link and is presented with about me section first, with navigation to other tabs.](./assets/PortfolioMain.png)
 
 
 ## Links
 
 My Github: https://github.com/David8127
 
-Deployed App:
+Deployed App: 

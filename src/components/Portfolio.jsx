@@ -1,9 +1,9 @@
-import Password from '../assets/passwordGen2.png';
+import Password from '../assets/PasswordGen2.png';
 import Schedule from '../assets/scheduleExample.png';
 import WeatherApp from '../assets/weather-app-pic.png';
-import Note from '../assets/new-note.png';
+import Note from '../assets/New-Note.png';
 import Carry from '../assets/carryon.png';
-import Tune from '../assets/tune-in.png';
+import Tune from '../assets/Tune-In.png';
 
 const Portfolio = () => {
   return (
