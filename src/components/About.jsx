@@ -1,8 +1,7 @@
 import React from 'react'
 import selfie from '../assets/Selfie.png';
-import MovingText from 'react-moving-text';
 
-function About() {
+export default function About() {
   return (
     <div className='flex flex-col space-y-5 items-center justify-center mx-9 py-10'>
       <div className="avatar">
@@ -11,16 +10,7 @@ function About() {
         </div>
       </div>
       <div className="text-3xl font-semibold p-1">
-      <MovingText
-        type="popIn"
-        duration="1700ms"
-        delay="0.5s"
-        direction="normal"
-        timing="ease"
-        iteration="1"
-        fillMode="none">
-        Hello Everyone!
-      </MovingText>
+      <h1>Hello Everyone!</h1>
       </div>
       <p className="text-xl py-1" style={{ width: "50vw", height: "30vh" }}>
         My name is <span className="font-bold">David Martin</span> and I am a MERN stack web developer. I am currently enrolled in the full stack coding bootcamp at UCI. I have an educational background
@@ -31,4 +21,3 @@ function About() {
   )
 }
 
-export default About;
